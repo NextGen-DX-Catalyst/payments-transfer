@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: transfer
+  title: Transfer
+  description: Send and receive money end to end.
+  annotations:
+    github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - transfer
+    - payments
+    - financial-data
+    - money-movement
+spec:
+  type: service
+  lifecycle: production
+  owner: payments
+  system: transfer
